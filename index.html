@@ -31,11 +31,6 @@
         	outline: none;
         	box-shadow: 0 0 4px 3px rgb(0, 0, 0, 0.2);
         }
-
-        [data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-header-bar {
-
-            background: rgb(255, 5, 131);
-        }
         
         @media screen and (min-width: 1500px) {
             [data-cognigy-webchat-root] {
@@ -46,9 +41,10 @@
                 width: auto;
                 height: auto;
             }
-            [data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-header-bar {
-
-                background: rgb(255, 255, 255);
+            [data-cognigy-webchat-root] [data-cognigy-webchat-toggle].webchat-toggle-button {
+            
+                background-image: none;
+                background-color: rgb(255, 255, 255);
             }
         
             [data-cognigy-webchat-root] [data-cognigy-webchat] {
