@@ -1,1 +1,32 @@
-
+<head>
+    <style type="text/css">
+        [data-cognigy-webchat-root] {
+            position: relative;
+            overflow: visible;
+        }
+        
+        [data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-chat-history {
+            text-align: center;
+            font-size: 40px;
+            
+        }
+    </style>
+</head>
+<body>
+    <script src="https://github.com/Cognigy/WebchatWidget/releases/latest/download/webchat.js"></script>
+    <script id="cognigy">
+        initWebchat(
+            "https://cognigy-v4-ep.scorobo.ai/8ecdd908dbdd81c5549049d7ae25b749c6d8da49db3300a783e503d1f1b02e8e", {
+                settings: {
+                    disableBranding: true,
+                    disableHtmlInput: true,
+                    disableInputAutofocus: true,
+                    // enablePersistentMenu: true,
+                    enableAutoFocus: true,
+                }
+            }).then(function(webchat) {
+                window.webchat = webchat;
+            
+            });
+    </script>
+</body>
