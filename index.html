@@ -14,19 +14,9 @@
 </head>
 <body>
     <script src="https://github.com/Cognigy/WebchatWidget/releases/latest/download/webchat.js"></script>
-    <script id="cognigy">
-        initWebchat(
-            "https://cognigy-v4-ep.scorobo.ai/0dbe828f42f761dbc37bd2cb87e709bfa28480e1a658abdc7b515280362b7019", {
-                settings: {
-                    disableBranding: true,
-                    disableHtmlInput: true,
-                    disableInputAutofocus: true,
-                    // enablePersistentMenu: true,
-                    enableAutoFocus: true,
-                }
-            }).then(function(webchat) {
-                window.webchat = webchat;
-            
-            });
+    <script>
+    	initWebchat(
+    		"https://cognigy-v4-ep.scorobo.ai/0dbe828f42f761dbc37bd2cb87e709bfa28480e1a658abdc7b515280362b7019"
+    	);
     </script>
 </body>
